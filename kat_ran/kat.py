@@ -7,6 +7,7 @@ Created on Fri Oct  4 23:12:15 2019
 """
 import random
 import time
+from playsound import playsound
 c=int(input('write in number how much you love a cat \n'))    
 def catran():
     a=random.randint(97,122)
