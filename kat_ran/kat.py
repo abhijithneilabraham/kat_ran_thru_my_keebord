@@ -13,11 +13,8 @@ import time
 #kat_sounds = ["cat1.mp3", "cat2.mp3", "cat3.mp3", "cat4.mp3", "cat5.mp3", "cat6.mp3"]
 c = int(input('Write in number how much you love a cat \n'))    
 def catran():
-<<<<<<< HEAD
-#    playsound("cataudios/" + random.choice(kat_sounds))
-=======
-#    playsound("catsounds/" + random.choice(kat_sounds))
->>>>>>> 2ba14e8c7ccb7356671e9795fd8260f1e82edf8b
+
+
     a = random.randint(97, 136)
     print(chr(a), end="")
 
@@ -30,24 +27,3 @@ for i in range(c):
 
 print("\n Oops, cat ran", str(c), "times through ya keyboard!")
 
-
-from tkinter import *
-
-root = Tk()
-imagelist = ["kat.jpeg"]
-# extract width and height info
-photo = PhotoImage(file=imagelist[0])
-width = photo.width()
-height = photo.height()
-canvas = Canvas(width=width, height=height)
-canvas.pack()
-# create a list of image objects
-giflist = []
-for imagefile in imagelist:
-    photo = PhotoImage(file=imagefile)
-    giflist.append(photo)
-# loop through the gif image objects for a while
-canvas.create_image(width/2.0, height/2.0, image=giflist[0])
-canvas.update()
-time.sleep(0.1)
-root.mainloop()
