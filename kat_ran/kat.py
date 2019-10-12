@@ -8,12 +8,12 @@ Created on Fri Oct  4 23:12:15 2019
 """
 import random
 import time
-from playsound import playsound
+#from playsound import playsound
 
-kat_sounds = ["cat1.mp3", "cat2.mp3", "cat3.mp3", "cat4.mp3", "cat5.mp3", "cat6.mp3"]
+#kat_sounds = ["cat1.mp3", "cat2.mp3", "cat3.mp3", "cat4.mp3", "cat5.mp3", "cat6.mp3"]
 c = int(input('Write in number how much you love a cat \n'))    
 def catran():
-    playsound("catsounds/" + random.choice(kat_sounds))
+#    playsound("catsounds/" + random.choice(kat_sounds))
     a = random.randint(97, 136)
     print(chr(a), end="")
 
