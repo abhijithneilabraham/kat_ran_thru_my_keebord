@@ -13,7 +13,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="katran",
-    version="0.0.1",
+    version="0.0.5",
     author="Abhijith Neil Abraham",
     author_email="abhijithneilabrahampk@gmail.com",
     description="Cat running experience through ya keeboooaard",

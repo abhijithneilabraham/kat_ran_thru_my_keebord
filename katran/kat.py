@@ -37,11 +37,11 @@ def katran(path_to_audio):
         
 
 
-def main():
+def main(path):
     consent=input("Do you wanna let your cat run on your keyboard? say yes or no \n")
     if consent=="yes":
         print("Well then, let's begin")
-        katran('cataudios/')
+        katran(path)
     else:
         exit()
 
