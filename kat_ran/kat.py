@@ -33,10 +33,13 @@ def katran():
         except KeyboardInterrupt:
             print("\n Oops, cat ran through ya keyboard!")
             break
-        
-            
-        
 
-katran()
-if input()=='q':
+consent=input("Do you wanna let your cat run on your keyboard?")
+if consent=="yes":
+    katran()
+    
+elif consent=="no":
     exit()
+else:
+    print("Well then, let's begin")
+    katran()
