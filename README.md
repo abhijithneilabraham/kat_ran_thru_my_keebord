@@ -2,6 +2,8 @@
 Scripting an experience of cat running through your keyboard.
 
 
+I am not responsible if your pet cats go mad after running this script.
+
 `pip install katran`
 
 
