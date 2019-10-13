@@ -9,9 +9,10 @@ Created on Fri Oct  4 23:12:15 2019
 import random
 import time
 from playsound import playsound
-def katran():
+import os
+def katran(path_to_audio):
     
-    kat_sounds = ["cat1.mp3", "cat2.mp3", "cat3.mp3", "cat4.mp3", "cat5.mp3", "cat6.mp3"]
+    kat_sounds =os.listdir(path_to_audio)
     
     print('cat is running through ya keyboard.Press ctrl+c two times to exit')
       
@@ -24,7 +25,7 @@ def katran():
         try:
             if i % 5 == 0:
                 r = random.uniform(0.01,0.2)
-                playsound("cataudios/" + random.choice(kat_sounds))
+                playsound(path_to_audio + random.choice(kat_sounds))
             a = random.randint(97, 136)
             print(chr(a), end="")        
             time.sleep(r)
@@ -33,13 +34,14 @@ def katran():
         except KeyboardInterrupt:
             print("\n Oops, cat ran through ya keyboard!")
             break
+        
 
-consent=input("Do you wanna let your cat run on your keyboard?")
-if consent=="yes":
-    katran()
-    
-elif consent=="no":
-    exit()
-else:
-    print("Well then, let's begin")
-    katran()
+
+def main():
+    consent=input("Do you wanna let your cat run on your keyboard? say yes or no \n")
+    if consent=="yes":
+        print("Well then, let's begin")
+        katran('cataudios/')
+    else:
+        exit()
+
